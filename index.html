@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      font-family: 'Comic Sans MS', cursive; /* Cartoony font */
+    }
+
+    .not-available {
+      font-size: 48px; /* Larger text */
+      color: red;
+      animation: moveText 1s infinite alternate; /* Animation */
+    }
+
+    @keyframes moveText {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(20px, 20px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="not-available">
+    NOT AVAILABLE
+  </div>
+</body>
+</html>
